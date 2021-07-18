@@ -70,6 +70,65 @@
       }
     }
   }
+
+  .tutorial-hapo {
+    margin-top: 30px;
+
+    .other-courses {
+      h1 {
+        font-size: 60px;
+        margin-top: 80px;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 70px;
+        color: $color-blue;
+        margin-top: -50px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .view-courses h1 {
+      color: $color-blue;
+      margin-top: 60px;
+      margin-bottom: 120px;
+    }
+
+    .card-hapo {
+      img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 1px 1px 12px $shadow-hapo;
+      }
+
+      a {
+        background-color: $color-blue;
+        font-size: 18px;
+        width: 200px;
+        border-radius: 35px;
+        border: 0;
+        box-shadow: 1px -2px $shadow-hapo;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      h5 {
+        font-size: 30px;
+        color: $color-blue;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 35px;
+      }
+    }
+
+    .card-body {
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      box-shadow: 1px 1px 5px $shadow-hapo;
+      background-color: $color-button;
+    }
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -135,6 +194,22 @@
       }
     }
   }
+
+  .tutorial-hapo {
+    margin-top: -40px;
+
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 4;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+
+    .take-course {
+      margin-bottom: -10px;
+    }
+  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -177,6 +252,28 @@
         padding: 5px;
         margin-bottom: 30px;
       }
+    }
+  }
+
+  .tutorial-hapo {
+    .card-hapo {
+      width: 300px;
+      margin-bottom: 35px;
+    }
+
+    .other-courses {
+      h1 {
+        font-size: 40px;
+        margin-top: 0;
+      }
+
+      h2 {
+        font-size: 50px;
+      }
+    }
+
+    .view-courses {
+      margin-top: -40px;
     }
   }
 }
