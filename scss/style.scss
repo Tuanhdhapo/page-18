@@ -75,21 +75,22 @@
     margin-top: 30px;
 
     .other-courses {
-      h1 {
+      .courses {
         font-size: 60px;
         margin-top: 80px;
         font-weight: 700;
       }
 
-      h2 {
-        font-size: 70px;
+      .underline {
+        font-size: 75px;
         color: $color-blue;
-        margin-top: -50px;
+        margin-top: -90px;
         margin-bottom: 30px;
       }
     }
 
-    .view-courses h1 {
+    .view-courses p {
+      font-size: 50px;
       color: $color-blue;
       margin-top: 60px;
       margin-bottom: 120px;
@@ -113,7 +114,7 @@
         margin-bottom: 20px;
       }
 
-      h5 {
+      .card-body p:nth-child(1) {
         font-size: 30px;
         color: $color-blue;
         overflow: hidden;
@@ -198,6 +199,10 @@
   .tutorial-hapo {
     margin-top: -40px;
 
+    .other-courses {
+      margin-top: -50px;
+    }
+
     p {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -208,6 +213,10 @@
 
     .take-course {
       margin-bottom: -10px;
+    }
+
+    .view-courses p {
+      font-size: 40px;
     }
   }
 }
@@ -262,18 +271,20 @@
     }
 
     .other-courses {
-      h1 {
+      .courses {
         font-size: 40px;
-        margin-top: 0;
+        margin-top: 50px;
+        margin-bottom: 30px;
       }
 
-      h2 {
+      .underline {
         font-size: 50px;
       }
     }
 
-    .view-courses {
-      margin-top: -40px;
+    .view-courses p {
+      margin-top: 5px;
+      font-size: 25px;
     }
   }
 }
