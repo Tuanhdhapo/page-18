@@ -130,6 +130,40 @@
       background-color: $color-button;
     }
   }
+
+  .why-hapo {
+    .bg-whyhapo img {
+      height: 570px;
+      width: 100%;
+    }
+
+    .laptop img {
+      margin-top: -75px;
+      width: 200px;
+    }
+
+    .laptop-phone img {
+      margin-right: 30px;
+      margin-top: 90px;
+      width: 600px;
+    }
+
+    p {
+      color: $color-button;
+      font-size: 70px;
+      margin: 200px 0px 0px 100px;
+    }
+
+    ul {
+      list-style-type: circle;
+    }
+
+    .list-whyhapo {
+      margin: 300px 0px 0px 100px;
+      color: $color-button;
+      font-size: 20px;
+    }
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -219,6 +253,38 @@
       font-size: 40px;
     }
   }
+  .why-hapo {
+    .bg-whyhapo img {
+      height: 395px;
+    }
+
+    .laptop img {
+      margin-top: -60px;
+      width: 160px;
+    }
+
+    .laptop-phone img {
+      margin-right: 10px;
+      margin-top: 100px;
+      width: 400px;
+    }
+
+    p {
+      color: $color-button;
+      font-size: 50px;
+      margin: 25px 0px 0px 220px;
+    }
+
+    .list-whyhapo {
+      margin: 180px 0px 0px 0px;
+      color: $color-button;
+      font-size: 14px;
+
+      li {
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -286,5 +352,28 @@
       margin-top: 5px;
       font-size: 25px;
     }
+  }
+
+  .why-hapo {
+    .bg-whyhapo img {
+      height: 570px;
+    }
+
+    .laptop img {
+      margin-top: -48px;
+      width: 130px;
+    }
+
+    .laptop-phone img {
+      margin-right: 50px;
+      margin-top: 340px;
+      width: 316px;
+    }
+  }
+
+  .why-hapo p {
+    color: $color-button;
+    font-size: 50px;
+    margin: 28px 0px 0px 120px;
   }
 }
