@@ -148,7 +148,7 @@
       width: 600px;
     }
 
-    h1 {
+    p {
       color: $color-button;
       font-size: 70px;
       margin: 200px 0px 0px 100px;
@@ -269,7 +269,7 @@
       width: 400px;
     }
 
-    h1 {
+    p {
       color: $color-button;
       font-size: 50px;
       margin: 25px 0px 0px 220px;
@@ -370,19 +370,10 @@
       width: 316px;
     }
   }
-  .why-hapo h1 {
+
+  .why-hapo p {
     color: $color-button;
     font-size: 50px;
     margin: 28px 0px 0px 120px;
-  }
-
-  .list-whyhapo {
-    margin: 160px 0px 0px 10px;
-    color: $color-button;
-    font-size: 14px;
-
-    li {
-      margin-top: 10px;
-    }
   }
 }
