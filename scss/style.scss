@@ -164,6 +164,33 @@
       font-size: 20px;
     }
   }
+  .feelback {
+    p:nth-child(1) {
+      font-weight: 700;
+      font-size: 70px;
+    }
+
+    p:nth-child(2) {
+      font-size: 70px;
+      font-weight: 700;
+      color: $color-blue;
+      margin-top: -100px;
+    }
+
+    p:nth-child(3) {
+    }
+  }
+
+  .your-class {
+    width: 70%;
+  }
+  .card-info-feelback {
+    width: 30%;
+  }
+
+  /*
+----------------------------
+*/
   .become-member {
     background-image: url("../assets/img/become-member.png");
     background-repeat: no-repeat;
