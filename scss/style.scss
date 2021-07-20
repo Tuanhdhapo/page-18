@@ -164,6 +164,31 @@
       font-size: 20px;
     }
   }
+  .become-member {
+    background-image: url("../assets/img/become-member.png");
+    background-repeat: no-repeat;
+
+    .info-become {
+      padding: 100px;
+
+      p:nth-child(1) {
+        font-size: 60px;
+        font-weight: 700;
+        color: $color-button;
+      }
+
+      button {
+        font-size: 35px;
+        border: 0;
+        background-color: $color-button;
+        border-radius: 35px;
+        width: 400px;
+        box-shadow: 2px 7px 5px $shadow-hapo;
+        margin-bottom: 200px;
+        color: $color-blue;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 770px) {
