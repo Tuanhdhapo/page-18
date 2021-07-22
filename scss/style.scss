@@ -101,6 +101,7 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         box-shadow: 1px 1px 12px $shadow-hapo;
+        height: 215px;
       }
 
       a {
@@ -132,6 +133,7 @@
   }
 
   .why-hapo {
+    height: 740px;
     .bg-whyhapo img {
       height: 570px;
       width: 100%;
@@ -162,6 +164,66 @@
       margin: 300px 0px 0px 100px;
       color: $color-button;
       font-size: 20px;
+    }
+  }
+
+  .become-member {
+    background-image: url("../assets/img/become-member.png");
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+
+    .info-become {
+      padding: 100px;
+
+      p:nth-child(1) {
+        font-size: 60px;
+        font-weight: 700;
+        color: $color-button;
+      }
+
+      button {
+        font-size: 35px;
+        border: 0;
+        background-color: $color-button;
+        border-radius: 35px;
+        width: 400px;
+        box-shadow: 2px 7px 5px $shadow-hapo;
+        color: $color-blue;
+      }
+    }
+  }
+
+  .statistic {
+    .statis {
+      font-size: 70px;
+      border-bottom: 5px solid $color-blue;
+      width: 250px;
+      margin: auto;
+    }
+
+    .underline {
+      font-size: 60px;
+      margin-top: -90px;
+      color: $color-blue;
+    }
+
+    .div-statistic {
+      width: 67%;
+
+      .card-statistic {
+        border: none;
+      }
+
+      p:nth-child(1) {
+        font-size: 50px;
+        font-family: $font-family;
+      }
+
+      p:nth-child(2) {
+        font-size: 40px;
+        font-weight: 700;
+        color: $color-blue;
+      }
     }
   }
 }
@@ -237,6 +299,10 @@
       margin-top: -50px;
     }
 
+    .card-hapo img {
+      height: 130px;
+    }
+
     p {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -254,6 +320,7 @@
     }
   }
   .why-hapo {
+    height: 400px;
     .bg-whyhapo img {
       height: 395px;
     }
@@ -282,6 +349,41 @@
 
       li {
         margin-top: 10px;
+      }
+    }
+  }
+
+  .become-member {
+    background-size: 100% 270px;
+
+    .info-become {
+      padding: 50px;
+
+      p:nth-child(1) {
+        font-size: 35px;
+        font-weight: 700;
+        color: $color-button;
+      }
+
+      button {
+        font-size: 25px;
+        width: 300px;
+        box-shadow: 2px 7px 5px $shadow-hapo;
+        color: $color-blue;
+      }
+    }
+  }
+
+  .statistic {
+    .statis {
+      font-size: 70px;
+    }
+
+    .div-statistic {
+      width: 100%;
+
+      .card-statistic {
+        width: 33%;
       }
     }
   }
@@ -334,6 +436,10 @@
     .card-hapo {
       width: 300px;
       margin-bottom: 35px;
+
+      img {
+        height: 165px;
+      }
     }
 
     .other-courses {
@@ -355,6 +461,7 @@
   }
 
   .why-hapo {
+    height: 570px;
     .bg-whyhapo img {
       height: 570px;
     }
@@ -375,5 +482,57 @@
     color: $color-button;
     font-size: 50px;
     margin: 28px 0px 0px 120px;
+  }
+
+  .become-member {
+    background-size: 100% 185px;
+    .info-become {
+      padding: 50px;
+
+      p:nth-child(1) {
+        font-size: 23px;
+        margin-top: -20px;
+      }
+
+      button {
+        padding: 5px;
+        font-size: 18px;
+        width: 180px;
+        color: $color-blue;
+      }
+    }
+  }
+
+  .become-member {
+    background-size: 100% 185px;
+    .info-become {
+      padding: 50px;
+
+      p:nth-child(1) {
+        font-size: 23px;
+        margin-top: -20px;
+      }
+
+      button {
+        padding: 5px;
+        font-size: 18px;
+        width: 180px;
+        color: $color-blue;
+      }
+    }
+  }
+  .statistic {
+    .statis {
+      font-size: 60px;
+      width: 200px;
+    }
+
+    .div-statistic {
+      width: 100%;
+
+      .card-statistic {
+        width: 100%;
+      }
+    }
   }
 }
