@@ -223,6 +223,21 @@
       }
     }
   }
+
+  .footer {
+    margin-top: 100px;
+
+    .footer-image {
+      img {
+        width: 290px;
+      }
+
+      p {
+        font-size: 13px;
+        margin-left: 70px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 770px) {
