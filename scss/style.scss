@@ -196,6 +196,9 @@
   .statistic {
     .statis {
       font-size: 70px;
+      border-bottom: 5px solid $color-blue;
+      width: 250px;
+      margin: auto;
     }
 
     .underline {
@@ -376,12 +379,6 @@
       font-size: 70px;
     }
 
-    .underline {
-      font-size: 60px;
-      margin-top: -90px;
-      color: $color-blue;
-    }
-
     .div-statistic {
       width: 100%;
 
@@ -527,12 +524,7 @@
   .statistic {
     .statis {
       font-size: 60px;
-    }
-
-    .underline {
-      font-size: 40px;
-      margin-top: -70px;
-      color: $color-blue;
+      width: 200px;
     }
 
     .div-statistic {
