@@ -225,16 +225,45 @@
   }
 
   .footer {
+    padding: 40px;
+    background-color: $footer-bg;
     margin-top: 100px;
+    color: $color-button;
 
     .footer-image {
       img {
         width: 290px;
+        margin-left: 80px;
       }
 
       p {
-        font-size: 13px;
-        margin-left: 70px;
+        width: 240px;
+        font-size: 19px;
+        margin-left: 150px;
+        font-family: $font-family;
+      }
+    }
+
+    .home {
+      p {
+        font-size: 23px;
+        margin-left: 90px;
+        font-family: $font-family;
+      }
+    }
+
+    .contact {
+      p {
+        font-size: 23px;
+        margin-left: 20px;
+        font-family: $font-family;
+      }
+    }
+
+    .footer-icon {
+      img {
+        margin-top: 80px;
+        margin-left: 20px;
       }
     }
   }
@@ -405,6 +434,43 @@
       }
     }
   }
+
+  .footer {
+    padding: 40px;
+
+    .footer-image {
+      img {
+        width: 170px;
+        margin-left: 0px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-left: 0px;
+      }
+    }
+
+    .home {
+      p {
+        font-size: 18px;
+        margin-left: 10px;
+      }
+    }
+
+    .contact {
+      p {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+    }
+
+    .footer-icon {
+      img {
+        width: 40px;
+        margin-left: 20px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -555,6 +621,47 @@
 
       .card-statistic {
         width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    padding: 30px;
+
+    .footer-image {
+      margin-top: 20px;
+
+      img {
+        width: 150px;
+        margin-left: 0px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-left: 0px;
+        width: 300px;
+      }
+    }
+
+    .home {
+      p {
+        font-size: 17px;
+        margin-left: 30px;
+      }
+    }
+
+    .contact {
+      p {
+        font-size: 17px;
+        margin-left: 40px;
+      }
+    }
+
+    .footer-icon {
+      img {
+        margin-top: 30px;
+        width: 30px;
+        margin-left: 15px;
       }
     }
   }
