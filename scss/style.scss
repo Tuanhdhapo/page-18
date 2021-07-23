@@ -226,6 +226,67 @@
       }
     }
   }
+
+  .footer {
+    padding: 40px;
+    background-color: $footer-bg;
+    margin-top: 100px;
+    color: $color-button;
+
+    .footer-image {
+      width: 38%;
+
+      img {
+        width: 290px;
+        margin-left: 80px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-left: 150px;
+        font-family: $font-family;
+      }
+    }
+
+    .home {
+      width: 12%;
+
+      p {
+        font-size: 20px;
+        font-family: $font-family;
+      }
+    }
+
+    .contact {
+      width: 13%;
+
+      p {
+        font-size: 20px;
+        margin-left: 20px;
+        font-family: $font-family;
+      }
+    }
+
+    .footer-icon {
+      width: 37%;
+
+      img {
+        margin-top: 80px;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .footer-end {
+    background-color: $footer-end;
+
+    p {
+      color: $color-button;
+      text-align: center;
+      font-size: 15px;
+      padding: 5px;
+    }
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -387,6 +448,55 @@
       }
     }
   }
+
+  .footer {
+    .footer-image {
+      width: 35%;
+
+      img {
+        width: 170px;
+        margin-left: 0;
+      }
+
+      p {
+        font-size: 16px;
+        margin: 0;
+      }
+    }
+
+    .home {
+      width: 10%;
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .contact {
+      width: 21%;
+
+      p {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+    }
+
+    .footer-icon {
+      width: 34%;
+
+      img {
+        width: 40px;
+        margin: 50px 0px 0px 20px;
+      }
+    }
+  }
+
+  .footer-end {
+    p {
+      font-size: 15px;
+      padding: 5px;
+    }
+  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -533,6 +643,55 @@
       .card-statistic {
         width: 100%;
       }
+    }
+  }
+
+  .footer {
+    .footer-image {
+      width: 65%;
+
+      img {
+        width: 170px;
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+
+    .home {
+      width: 50%;
+
+      p {
+        font-size: 17px;
+      }
+    }
+
+    .contact {
+      width: 50%;
+
+      p {
+        font-size: 17px;
+        margin-left: 20px;
+      }
+    }
+
+    .footer-icon {
+      width: 35%;
+      img {
+        width: 25px;
+        margin: 40px 0px 0px 3px;
+      }
+    }
+  }
+
+  .footer-end {
+    p {
+      font-size: 15px;
+      padding: 5px;
     }
   }
 }
