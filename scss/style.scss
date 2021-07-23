@@ -270,6 +270,17 @@
       }
     }
   }
+
+  .footer-end {
+    background-color: $footer-end;
+
+    p {
+      color: $color-button;
+      text-align: center;
+      font-size: 15px;
+      padding: 5px;
+    }
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -655,6 +666,13 @@
         width: 30px;
         margin-left: 15px;
       }
+    }
+  }
+
+  .footer-end {
+    p {
+      font-size: 10px;
+      padding: 5px;
     }
   }
 }
