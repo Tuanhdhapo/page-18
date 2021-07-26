@@ -371,6 +371,89 @@
       padding: 5px;
     }
   }
+
+  .mess-facebook {
+    border: 0;
+    width: 20px;
+    top: 88%;
+    left: 92%;
+    margin-right: 100px;
+    position: fixed;
+
+    .hide {
+      display: none;
+      width: 360px;
+      height: 190px;
+      float: right;
+    }
+
+    .frame-mess {
+      height: 190px;
+      width: 360px;
+      margin-right: -50px;
+      border-radius: 23px;
+      margin-top: -270px;
+      float: right;
+      box-sizing: border-box;
+      box-shadow: 1px 1px 4px 1px $shadow-hapo;
+      border: 1px solid $color-button;
+    }
+
+    .frame-hapo {
+      p {
+        margin-left: 60px;
+        padding: 8px;
+        display: inline-block;
+        font-size: 12px;
+      }
+
+      img {
+        float: right;
+        padding: 8px;
+        margin-right: 10px;
+      }
+    }
+
+    .hello {
+      img {
+        margin-left: 5px;
+      }
+
+      p {
+        display: inline-block;
+        font-size: 12px;
+        margin-left: 5px;
+        background-color: $color-button;
+        border-radius: 15px;
+        width: 256px;
+        height: 53px;
+        padding: 10px;
+      }
+    }
+
+    .login-mess {
+      background-color: $message;
+      margin: auto;
+      width: 276px;
+      border-radius: 10px;
+      padding: 5px;
+
+      img {
+        margin-left: 50px;
+      }
+
+      span {
+        font-size: 12px;
+        color: $color-button;
+      }
+    }
+
+    .chat-hapo {
+      color: $shadow-hapo;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -606,6 +689,10 @@
       font-size: 15px;
       padding: 5px;
     }
+  }
+
+  .mess-facebook {
+    left: 90%;
   }
 }
 
@@ -864,5 +951,9 @@
       font-size: 15px;
       padding: 5px;
     }
+  }
+
+  .mess-facebook {
+    left: 80%;
   }
 }

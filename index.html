@@ -22,6 +22,31 @@
 
     <body>
 
+        <div id="draggable" class="ui-widget-content mess-facebook">
+            <img src="assets/img/message.png" onclick="show()">
+            <div id="hide" class="hide">
+                <div class="frame-mess">
+                    <div class="frame-hapo">
+                        <p>HapoLearn</p>
+                        <img onclick="hide()"
+                            src="assets/img/x.png">
+                    </div>
+                    <div class="hello">
+                        <img src="assets/img/cu.png">
+                        <p>HapoLearn xin chào bạn.<br>
+                            Bạn có cần chúng tôi hỗ trợ gì không? </p>
+                    </div>
+                    <div class="login-mess">
+                        <img src="assets/img/vector.png">
+                        <span>Đăng nhập vào Messenger</span>
+                    </div>
+                    <div class="chat-hapo">
+                        <p>Chat với HapoLearn trong Messenger</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <header class="header fixed">
             <div class="container">
                 <div class="row">
@@ -430,9 +455,8 @@
         </div>
         <div class="footer-end"> <p>© 2020 HapoLearn, Inc. All rights reserved.</p>
         </div>
-
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script
