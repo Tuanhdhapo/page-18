@@ -24,4 +24,22 @@ function show() {
 
 function hide() {
   document.getElementById("hide").style.display = "none";
-} 
+}
+
+$(function () {
+  $("#tabs").tabs();
+});
+
+function register() {
+  document.getElementById('register-change').style.backgroundColor = "#B2D235";
+  document.getElementById('register-change').style.color = "#ffffff";
+  document.getElementById('login-change').style.backgroundColor = "#ffffff";
+  document.getElementById('login-change').style.color = "#B2D235";
+}
+
+function login() {
+  document.getElementById('login-change').style.backgroundColor = "#B2D235";
+  document.getElementById('login-change').style.color = "#ffffff";
+  document.getElementById('register-change').style.backgroundColor = "#ffffff";
+  document.getElementById('register-change').style.color = "#B2D235";
+}
