@@ -491,6 +491,7 @@
 
       a {
         text-decoration: none;
+        color: $color-blue;
       }
 
       p {
@@ -503,8 +504,6 @@
       p {
         padding: 20px;
         font-size: 25px;
-        color: $color-button;
-        background-color: $color-blue;
         font-weight: 700;
       }
     }
@@ -514,12 +513,9 @@
     }
 
     .register {
-      background-color: $color-button;
-
       p {
         padding: 20px;
         font-size: 25px;
-        color: $color-blue;
         font-weight: 700;
       }
     }
@@ -580,6 +576,11 @@
         border: none;
       }
     }
+  }
+
+  .active-tab {
+    background-color: $color-blue;
+    color: $color-button;
   }
 }
 

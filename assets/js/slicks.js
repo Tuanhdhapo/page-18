@@ -30,16 +30,18 @@ $(function () {
   $("#tabs").tabs();
 });
 
-function register() {
-  document.getElementById('register-change').style.backgroundColor = "#B2D235";
-  document.getElementById('register-change').style.color = "#ffffff";
-  document.getElementById('login-change').style.backgroundColor = "#ffffff";
-  document.getElementById('login-change').style.color = "#B2D235";
-}
+$('#register-change').on('click', function () {
+  if ($('#login-change').hasClass('active-tab')) {
+    $('#login-change').removeClass('active-tab');
+  }
 
-function login() {
-  document.getElementById('login-change').style.backgroundColor = "#B2D235";
-  document.getElementById('login-change').style.color = "#ffffff";
-  document.getElementById('register-change').style.backgroundColor = "#ffffff";
-  document.getElementById('register-change').style.color = "#B2D235";
-}
+  $(this).addClass('active-tab');
+});
+
+$('#login-change').on('click', function () {
+  if ($('#register-change').hasClass('active-tab')) {
+    $('#register-change').removeClass('active-tab');
+  }
+
+  $(this).addClass('active-tab');
+});
