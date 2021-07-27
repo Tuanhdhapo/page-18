@@ -454,6 +454,134 @@
       font-size: 12px;
     }
   }
+
+  .frame-login {
+    position: fixed;
+    margin-top: -100px;
+    margin-left: 40px;
+  }
+
+  .login-register {
+    padding: 0px;
+    margin: 0px;
+    width: 430px;
+    height: 570px;
+  }
+
+  .tabs {
+    .button-close {
+      border-radius: 100%;
+      border: none;
+      padding: 0px;
+      position: fixed;
+      margin-left: 30.5%;
+      margin-top: -10px;
+    }
+
+    ul {
+      padding: 0px;
+      display: flex;
+    }
+
+    li {
+      list-style: none;
+      margin: auto;
+      width: 50%;
+      height: 70px;
+
+      a {
+        text-decoration: none;
+        color: $color-blue;
+      }
+
+      p {
+        text-align: center;
+        border-bottom: 1px solid $color-blue;
+      }
+    }
+
+    .login {
+      p {
+        padding: 20px;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+
+    .img-fb {
+      width: 12px;
+    }
+
+    .register {
+      p {
+        padding: 20px;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+
+    .tabs-container {
+      width: 90%;
+
+      .input {
+        margin-bottom: 20px;
+      }
+
+      .check-box {
+        height: 20px;
+        width: 20px;
+        background-color: $color-blue;
+      }
+
+      .check-box:hover {
+        background-color: $color-blue;
+      }
+
+      input {
+        width: 100%;
+        height: 40px;
+        background-color: $bg-input;
+        border: none;
+      }
+
+      .forgot {
+        float: right;
+        color: $color-blue;
+      }
+
+      .login-hapo {
+        width: 50%;
+        background-color: $color-blue;
+        border-radius: 22px;
+        margin-top: 20px;
+        border: $color-blue;
+        font-weight: 700;
+      }
+
+      .login-with {
+        border-bottom: 1px solid $shadow-hapo;
+      }
+
+      .facebook {
+        width: 100%;
+        background-color: $color-facebook;
+        height: 55px;
+        border: none;
+      }
+
+      .google {
+        width: 100%;
+        background-color: $color-google;
+        height: 55px;
+        border: none;
+      }
+    }
+  }
+
+  .active-tab {
+    background-color: $color-blue;
+    color: $color-button;
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -693,6 +821,18 @@
 
   .mess-facebook {
     left: 90%;
+  }
+
+  .frame-login {
+    position: fixed;
+    margin-left: 40px;
+    margin-top: 1%;
+  }
+
+  .tabs {
+    .button-close {
+      margin-left: 52%;
+    }
   }
 }
 
@@ -955,5 +1095,25 @@
 
   .mess-facebook {
     left: 80%;
+  }
+
+  .frame-login {
+    margin-top: 50px;
+    margin-left: 0px;
+    width: 400px;
+  }
+
+  .login-register {
+    padding: 0px;
+    margin: 0px;
+    width: 378px;
+    height: 600px;
+  }
+
+  .tabs {
+    .button-close {
+      margin-left: 85%;
+      margin-top: -10px;
+    }
   }
 }
