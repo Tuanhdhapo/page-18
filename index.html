@@ -29,7 +29,7 @@
                     <div class="frame-hapo">
                         <p>HapoLearn</p>
                         <img onclick="hide()"
-                            src="assets/img/x.png">
+                            src="assets/img/close-mess.png">
                     </div>
                     <div class="hello">
                         <img src="assets/img/cu.png">
@@ -38,10 +38,10 @@
                     </div>
                     <div class="login-mess">
                         <img src="assets/img/iconmess.png">
-                        <span>Đăng nhập vào Messenger</span>
+                        <a href=""> <span>Đăng nhập vào Messenger</span></a>
                     </div>
                     <div class="chat-hapo">
-                        <p>Chat với HapoLearn trong Messenger</p>
+                        <a href=""><p>Chat với HapoLearn trong Messenger</p></a>
                     </div>
                 </div>
             </div>
@@ -74,23 +74,37 @@
                         <div
                             class="collapse navbar-collapse navbar-menu-div"
                             id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link text-center" href="#">HOME<span
-                                            class="sr-only"></span></a>
+                            <ul class="navbar-nav nav" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-center active"
+                                        role="tab"
+                                        data-toggle="pill"
+                                        aria-selected="true"
+                                        href="#">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-center" href="#">ALL
+                                    <a class="nav-link text-center"
+                                        aria-selected="false"
+                                        data-toggle="pill"
+                                        role="tab"
+                                        href="#">ALL
                                         COURSES</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-center"
+                                        role="tab"
+                                        aria-selected="false"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal" href="#">LOGIN/REGISTER
+                                        data-bs-target="#exampleModal"
+                                        data-toggle="pill" href="#">LOGIN/REGISTER
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-center" href="#">PROFILE</a>
+                                    <a class="nav-link text-center"
+                                        role="tab"
+                                        aria-selected="false"
+                                        data-toggle="pill"
+                                        href="#">PROFILE</a>
                                 </li>
                             </ul>
                         </div>
@@ -101,8 +115,9 @@
 
         <div class="frame-login modal fade modal-dialog modal-dialog-centered"
             id="exampleModal" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="frame-login">
+            aria-labelledby="exampleModalLabel" aria-hidden="true"
+            style="display:none">
+            <div class="frame-loginn">
                 <div class="modal-dialog">
                     <div class="modal-content content">
                         <div class="login-register">
@@ -130,10 +145,11 @@
                                             <span>Password:</span><br>
                                             <input type="password"><br>
                                         </div>
-                                        <div>
+                                        <div class="login-check">
                                             <input class="check-box"
                                                 type="checkbox">
-                                            <span>Rememberme</span>
+                                            <span class="rememberme"><a
+                                                    href="">&nbsp; Rememberme</a></span>
                                             <span><a class="forgot" href="">Forgot
                                                     password</a></span><br>
                                         </div>
@@ -141,7 +157,7 @@
                                             <p class="text-center">
                                                 <button
                                                     type="button" class="btn
-                                                    btn-primary login-hapo">Login</button>
+                                                    btn-primary login-hapo">LOGIN</button>
                                             </p>
                                         </div>
                                         <p class="text-center login-with">Login
@@ -168,7 +184,7 @@
                                     </div>
                                     <div id="tabs-register">
                                         <br><br>
-                                        <div class="input"> <span>Username:</span><br>
+                                        <div class="input user-input"> <span>Username:</span><br>
                                             <input type="text"><br>
                                         </div>
                                         <div class="input"> <span>Email:</span><br>
@@ -214,6 +230,8 @@
             </div>
         </div>
 
+        <div class="bg-banner"></div>
+
         <div class="tutorial-hapo">
             <div class="container">
                 <div class="row">
@@ -226,7 +244,7 @@
                                 <p class="card-title text-center">
                                     HTML/CSS/js <span>Tutorial</span>
                                 </p>
-                                <p class="card-text text-center">
+                                <p class="card-text text-center text-title">
                                     I knew hardly anything about HTML, JS, and
                                     CSS before entering
                                     New Media. I had coded quite a bit, but
@@ -251,7 +269,7 @@
                             <div class="card-body">
                                 <p class="card-title text-center">LARAVEL
                                     Tutorial</p>
-                                <p class="card-text text-center">
+                                <p class="card-text text-center text-title">
                                     I knew hardly anything about HTML, JS, and
                                     CSS before entering
                                     New Media. I had coded quite a bit, but
@@ -272,7 +290,7 @@
                                 alt="php" />
                             <div class="card-body">
                                 <p class="card-title text-center">PHP Tutorial</p>
-                                <p class="card-text text-center">
+                                <p class="card-text text-center text-title">
                                     I knew hardly anything about HTML, JS, and
                                     CSS before entering
                                     New Media. I had coded quite a bit, but
@@ -290,7 +308,6 @@
             </div>
             <div class="other-courses">
                 <p class="text-center courses">Other courses</p>
-                <p class="text-center underline">____________</p>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-4 col-md-4 d-flex
@@ -303,7 +320,7 @@
                                         text-center">
                                         CSS Tutorial
                                     </p>
-                                    <p class="card-text text-center">
+                                    <p class="card-text text-center text-title">
                                         I knew hardly anything about HTML, JS,
                                         and CSS before
                                         entering New Media,...
@@ -327,7 +344,7 @@
                                     <p class="card-title text-center">
                                         Ruby on rails <span>Tutorial</span>
                                     </p>
-                                    <p class="card-text text-center">
+                                    <p class="card-text text-center text-title">
                                         I knew hardly anything about HTML, JS,
                                         and CSS before
                                         entering New Media,...
@@ -347,7 +364,7 @@
                                 <div class="card-body">
                                     <p class="card-title text-center">Java
                                         Tutorial</p>
-                                    <p class="card-text text-center">
+                                    <p class="card-text text-center text-title">
                                         I knew hardly anything about HTML, JS,
                                         and CSS before
                                         entering New Media,...
@@ -363,32 +380,50 @@
                 </div>
             </div>
             <div class="view-courses">
-                <p class="text-center">Viewv All Our Courses &#8594;</p>
+                <p class="text-center">View All Our Courses <img class="arrow"
+                        src="assets/img/arrow.png" alt="arrow"></p>
             </div>
         </div>
 
         <div class="why-hapo">
-            <div class="position-relative">
-                <div class="position-absolute bg-whyhapo"><img
-                        src="assets/img/bg.png" alt="bg-whyhapo"></div>
-                <div class="position-absolute laptop"><img
+            <div class="container-fuild">
+
+                <div class="laptop"><img
                         src="assets/img/laptop.png" alt="laptp"></div>
-                <div class="position-absolute laptop-phone top-0 end-0"><img
-                        src="assets/img/lap-ipone.png" alt="laptop-ipone"></div>
-                <div class="position-absolute"><p>Why HapoLearn?</p></div>
-                <div class="position-absolute list-whyhapo">
-                    <ul>
-                        <li>Interactive lessons, "on-the-go" practice, peer
-                            support.</li>
-                        <li>Interactive lessons, "on-the-go" practice, peer
-                            support.</li>
-                        <li>Interactive lessons, "on-the-go" practice, peer
-                            support.</li>
-                        <li>Interactive lessons, "on-the-go" practice, peer
-                            support.</li>
-                        <li>Interactive lessons, "on-the-go" practice, peer
-                            support.</li>
-                    </ul>
+
+                <div class="info-laptop">
+                    <div class="info-why">
+                        <div class=""><p>Why HapoLearn?</p></div>
+                        <div class="list-whyhapo">
+                            <ul>
+                                <li class="fas fa-check-circle mr-2"><span>
+                                        Interactive
+                                        lessons, "on-the-go" practice, peer
+                                        support.</span></li>
+                                <li class="fas fa-check-circle mr-2"><span>
+                                        Interactive
+                                        lessons, "on-the-go" practice, peer
+                                        support.</span></li>
+                                <li class="fas fa-check-circle mr-2"> <span>
+                                        Interactive
+                                        lessons, "on-the-go" practice, peer
+                                        support.</span></li>
+                                <li class="fas fa-check-circle mr-2"><span>
+                                        Interactive
+                                        lessons, "on-the-go" practice, peer
+                                        support.</span></li>
+                                <li class="fas fa-check-circle mr-2"> <span>
+                                        Interactive
+                                        lessons, "on-the-go" practice, peer
+                                        support.</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="laptop-phone"><img
+                            src="assets/img/lap-ipone.png"
+                            alt="laptop-ipone">
+                    </div>
                 </div>
             </div>
         </div>
@@ -396,85 +431,93 @@
         <div class="feedback">
             <p class="feedback-title">Feedback</p>
             <p class="feedback-info text-center">What other students turned
-                professionals have to say about us<br> after learning with us
+                professionals have to say about us<br> after learning with
+                us
                 and reaching their
                 goals</p>
-            <div class="feelbacks slick">
-                <div class="feelback-card">
-                    <div class="feelback-border">
-                        <p>“A wonderful course on how to start. Eddie
-                            beautifully conveys all essentials of a becoming a
-                            good Angular developer. Very glad to have taken this
-                            course. Thank you Eddie Bryan.”</p>
-                    </div>
-                    <div class="user">
-                        <div class="image-user">
-                            <img
-                                src="assets/img/meo.png" alt="avatar">
+            <div class="fellback-all">
+                <div class="feelbacks slick">
+                    <div class="feelback-card">
+                        <div class="feelback-info">
+                            <div class="feelback-border">
+                                <p>“A wonderful course on how to start. Eddie
+                                    beautifully conveys all essentials of a
+                                    becoming
+                                    a good Angular developer. Very glad to have
+                                    taken this course. Thank you Eddie Bryan.”</p>
+                            </div>
                         </div>
-                        <div class="user-info">
-                            <p class="name-user">Hoang Anh Nguyen</p>
-                            <p class="name-courses">PHP</p>
-                            <div class="star">
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
+                        <div class="user">
+                            <div class="image-user">
+                                <img
+                                    src="assets/img/meo.png" alt="avatar">
+                            </div>
+                            <div class="user-info">
+                                <p class="name-user">Tuan Tran Hoang</p>
+                                <p class="name-courses">Python</p>
+                                <div class="star">
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="feelback-card">
-                    <div class="feelback-info">
-                        <div class="feelback-border">
-                            <p>“A wonderful course on how to start. Eddie
-                                beautifully conveys all essentials of a becoming
-                                a good Angular developer. Very glad to have
-                                taken this course. Thank you Eddie Bryan.”</p>
+                    <div class="feelback-card">
+                        <div class="feelback-info">
+                            <div class="feelback-border">
+                                <p>“A wonderful course on how to start. Eddie
+                                    beautifully conveys all essentials of a
+                                    becoming
+                                    a good Angular developer. Very glad to have
+                                    taken this course. Thank you Eddie Bryan.”</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="user">
-                        <div class="image-user">
-                            <img
-                                src="assets/img/meo.png" alt="avatar">
-                        </div>
-                        <div class="user-info">
-                            <p class="name-user">Tuan Tran Hoang</p>
-                            <p class="name-courses">Python</p>
-                            <div class="star">
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
+                        <div class="user">
+                            <div class="image-user">
+                                <img
+                                    src="assets/img/meo.png" alt="avatar">
+                            </div>
+                            <div class="user-info">
+                                <p class="name-user">Hồ Đức Tuân</p>
+                                <p class="name-courses">PHP & Laravel</p>
+                                <div class="star">
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="feelback-card">
-                    <div class="feelback-info">
-                        <div class="feelback-border">
-                            <p>“A wonderful course on how to start. Eddie
-                                beautifully conveys all essentials of a becoming
-                                a good Angular developer. Very glad to have
-                                taken this course. Thank you Eddie Bryan.”</p>
+                    <div class="feelback-card">
+                        <div class="feelback-info">
+                            <div class="feelback-border">
+                                <p>“A wonderful course on how to start. Eddie
+                                    beautifully conveys all essentials of a
+                                    becoming
+                                    a good Angular developer. Very glad to have
+                                    taken this course. Thank you Eddie Bryan.”</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="user">
-                        <div class="image-user">
-                            <img
-                                src="assets/img/meo.png" alt="avatar">
-                        </div>
-                        <div class="user-info">
-                            <p class="name-user">Hồ Đức Tuân</p>
-                            <p class="name-courses">PHP & Laravel</p>
-                            <div class="star">
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
-                                <p class="fas fa-star"></p>
+                        <div class="user">
+                            <div class="image-user">
+                                <img
+                                    src="assets/img/meo.png" alt="avatar">
+                            </div>
+                            <div class="user-info">
+                                <p class="name-user">Hồ Đức Tuân</p>
+                                <p class="name-courses">PHP & Laravel</p>
+                                <div class="star">
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                    <p class="fas fa-star"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -536,23 +579,26 @@
                         <p>FAQ</p>
                     </div>
                     <div class="footer-icon order-md-4">
-                        <a href="" class="data-toggle" tooltip
-                            data-placement="right"
-                            title="facebook.com/tuyen.dung.haposoft"><img
-                                src="assets/img/fb.png" alt="facebook"></a>
-                        <a href="" class="data-toggle" tooltip
-                            data-placement="right"
-                            title="+84-85-645-9898"><img
-                                src="assets/img/phone.png" alt="phone"></a>
-                        <a href="" class="data-toggle" tooltip
-                            data-placement="right"
-                            title="info@haposoft.com"><img
-                                src="assets/img/email.png" alt="email"></a>
+                        <div class="icon-footer">
+                            <a href="" class="data-toggle" tooltip
+                                data-placement="right"
+                                title="facebook.com/tuyen.dung.haposoft"><img
+                                    src="assets/img/fb.png" alt="facebook"></a>
+                            <a href="" class="data-toggle" tooltip
+                                data-placement="right"
+                                title="+84-85-645-9898"><img
+                                    src="assets/img/phone.png" alt="phone"></a>
+                            <a href="" class="data-toggle" tooltip
+                                data-placement="right"
+                                title="info@haposoft.com"><img
+                                    src="assets/img/email.png" alt="email"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-end"> <p>© 2020 HapoLearn, Inc. All rights reserved.</p>
+        <div class="footer-end"> <p>© 2020 HapoLearn, Inc. All rights
+                reserved.</p>
         </div>
 
         <script

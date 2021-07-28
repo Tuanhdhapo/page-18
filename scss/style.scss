@@ -1,6 +1,6 @@
 @import "variable";
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1950px) {
   .header {
     padding: 10px;
 
@@ -18,82 +18,127 @@
       .nav-link {
         margin: 10px;
         font-weight: 700;
-        font-family: $font-family;
-        font-size: 20px;
+        font-family: san;
+        font-size: 14px;
+        color: $footer-bg;
+      }
+      .active {
+        background-color: $color-blue;
+        color: $color-button !important;
+        border-radius: 17px;
       }
 
       .nav-link:hover {
-        padding: 5px 10px 10px 5px;
+        padding: 8px;
         background-color: $color-blue;
-        border-radius: 35px;
+        border-radius: 17px;
         color: $color-button !important;
       }
     }
   }
 
+  .fix-fixed {
+    margin-top: 0px;
+  }
+
   .banner {
     background-image: url("../assets/img/banner.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 655px;
+    margin-top: -30px;
 
     .info-banner {
       padding: 50px;
 
       p:nth-child(1) {
         margin-top: 140px;
-        font-size: 55px;
-        font-family: $font-family;
-      }
-
-      p:nth-child(2) {
-        font-size: 55px;
+        font-size: 43px;
+        font-family: utm;
+        text-shadow: 5px;
+        color: $other-courses;
         font-weight: 700;
       }
 
+      p:nth-child(2) {
+        font-size: 43px;
+        font-weight: 700;
+        font-family: utm;
+        text-shadow: 2px 2px $other-courses;
+        -webkit-text-stroke-width: 2px;
+        margin-top: -30px;
+        color: $other-courses;
+      }
+
       img {
-        width: 55px;
+        width: 45px;
       }
 
       p:nth-child(3) {
-        font-size: 25px;
+        font-size: 16px;
+        font-family: utm;
       }
 
       button {
-        font-size: 35px;
+        padding: 7px;
+        font-family: utm;
+        font-size: 28px;
         border: 0;
         background-color: $color-blue;
         border-radius: 35px;
         width: 400px;
-        box-shadow: 2px 7px 5px $shadow-hapo;
-        margin-bottom: 200px;
+        box-shadow: 0px -2px 4px 0px $shadow-hapo;
+        margin-bottom: 100px;
         color: $color-button;
+        font-weight: 700;
+      }
+      button:hover {
+        color: $buton-hover;
       }
     }
   }
 
+  .bg-banner {
+    height: 200px;
+    background-image: linear-gradient(to top, $bg-banner, $color-button);
+  }
+
   .tutorial-hapo {
-    margin-top: 30px;
+    margin-top: -100px;
+
+    .text-title {
+      font-weight: 700;
+      font-size: 14px;
+      font-family: utm;
+    }
 
     .other-courses {
-      .courses {
-        font-size: 60px;
-        margin-top: 80px;
-        font-weight: 700;
-      }
+      margin-top: 100px;
 
-      .underline {
-        font-size: 75px;
-        color: $color-blue;
-        margin-top: -90px;
-        margin-bottom: 30px;
+      .courses {
+        font-size: 80px;
+        font-weight: 700;
+        color: $other-courses;
+        font-family: utm;
+        border-bottom: 5px solid $color-blue;
+        width: 510px;
+        margin: auto;
+        margin-bottom: 50px;
+        text-shadow: 1px 1px $other-courses;
       }
     }
 
     .view-courses p {
-      font-size: 50px;
-      color: $color-blue;
+      font-size: 40px;
+      color: $view-courses;
       margin-top: 60px;
       margin-bottom: 120px;
+      font-weight: 700;
+      font-family: utm;
+      text-shadow: 1px 1px $view-courses;
+    }
+
+    .view-courses p:hover {
+      font-size: 60px;
     }
 
     .card-hapo {
@@ -113,6 +158,12 @@
         box-shadow: 1px -2px $shadow-hapo;
         padding: 10px;
         margin-bottom: 20px;
+        font-weight: 700;
+        font-family: utm;
+      }
+
+      a:hover {
+        color: $buton-hover;
       }
 
       .card-body p:nth-child(1) {
@@ -120,7 +171,9 @@
         color: $color-blue;
         overflow: hidden;
         text-overflow: ellipsis;
-        height: 35px;
+        height: 37px;
+        font-family: utm;
+        font-weight: 700;
       }
     }
 
@@ -133,52 +186,80 @@
   }
 
   .why-hapo {
+    background-image: url("../assets/img/bg.png");
+    background-repeat: no-repeat;
     height: 740px;
-    .bg-whyhapo img {
-      height: 570px;
-      width: 100%;
-    }
+    background-size: 100% 740px;
 
     .laptop img {
-      margin-top: -75px;
-      width: 200px;
+      margin-top: -260px;
+      width: 478px;
     }
 
     .laptop-phone img {
-      margin-right: 30px;
-      margin-top: 90px;
-      width: 600px;
+      width: 750px;
+    }
+
+    .info-laptop {
+      display: flex;
+      margin-top: -300px;
+    }
+
+    .info-why {
+      float: right;
+      width: 50%;
+      margin-top: 180px;
     }
 
     p {
+      font-weight: 700;
+      font-family: utm;
       color: $color-button;
       font-size: 70px;
-      margin: 200px 0px 0px 100px;
-    }
-
-    ul {
-      list-style-type: circle;
+      float: right;
     }
 
     .list-whyhapo {
-      margin: 300px 0px 0px 100px;
       color: $color-button;
-      font-size: 20px;
+      line-height: 40px;
+
+      li {
+        float: right;
+      }
+
+      span {
+        font-size: 20px;
+        font-family: stm;
+        font-weight: normal;
+        letter-spacing: 1px;
+        line-height: 50px;
+      }
     }
   }
 
   .feedback {
+    margin-top: 90px;
+
+    .fellback-all {
+      width: 85%;
+      margin: auto;
+    }
+
     .feedback-title {
       font-size: 80px;
       font-weight: 700;
       border-bottom: 5px solid $color-blue;
       margin: auto;
       width: 350px;
+      font-family: utm;
+      color: $other-courses;
+      text-shadow: 1px 1px $other-courses;
     }
 
     .feedback-info {
       font-size: 25px;
       margin-top: 20px;
+      font-family: utm;
     }
   }
 
@@ -188,20 +269,22 @@
 
     .feelback-info {
       margin: auto;
-      width: 550px;
+      width: 95%;
       border-radius: 10px;
       padding: 25px;
-      box-shadow: 0px 0px 2px 2px $shadow-hapo;
+      box-shadow: 0px 0px 2px 2px $boder-slick;
+      font-size: 16px;
+      font-family: utm;
     }
 
     .feelback-border {
-      border-left: 4px solid $shadow-hapo;
+      border-left: 4px solid $boder-slick;
       margin-left: 10px;
       padding: 10px;
     }
 
     .user {
-      margin: 40px 0px 0px 80px;
+      margin: 40px 0px 0px 40px;
       display: flex;
 
       .image-user {
@@ -210,14 +293,18 @@
     }
 
     .user-info {
-      margin-left: 20px;
-
       .name-user {
         font-size: 20px;
+        font-family: utm;
+        font-weight: 700;
+        color: $other-courses;
+        text-shadow: 1px 1px $other-courses;
       }
       .name-courses {
         font-size: 16px;
         margin-top: -20px;
+        font-weight: 700;
+        font-family: utm;
       }
 
       .star {
@@ -229,26 +316,28 @@
   }
 
   .prev {
-    width: 25px;
+    width: 22px;
     border-radius: 100%;
     position: absolute;
-    top: 120px;
-    left: 40px;
+    top: 30%;
+    left: 0.1%;
     background-color: $color-button;
     border: 2px solid $shadow-hapo;
     text-align: center;
     z-index: 1;
+    color: $next-color;
   }
 
   .next {
-    width: 25px;
+    width: 22px;
     border-radius: 100%;
     background-color: $color-button;
     position: absolute;
-    top: 120px;
-    right: 40px;
+    top: 30%;
+    right: 0.1%;
     border: 2px solid $shadow-hapo;
     text-align: center;
+    color: $next-color;
   }
 
   .become-member {
@@ -263,35 +352,44 @@
         font-size: 60px;
         font-weight: 700;
         color: $color-button;
+        font-family: utm;
+        text-shadow: 1px 1px $color-button;
       }
 
       button {
-        font-size: 35px;
+        font-size: 30px;
         border: 0;
         background-color: $color-button;
         border-radius: 35px;
         width: 400px;
-        box-shadow: 2px 7px 5px $shadow-hapo;
+        box-shadow: 2px -2px 5px $shadow-hapo;
         color: $color-blue;
+        font-weight: 700;
+        font-family: utm;
+        padding: 10px;
+      }
+
+      button:hover {
+        color: $buton-hover;
       }
     }
   }
 
   .statistic {
+    margin-top: 60px;
     .statis {
-      font-size: 70px;
+      font-size: 80px;
       border-bottom: 5px solid $color-blue;
-      width: 250px;
+      color: $other-courses;
+      font-family: utm;
+      width: 280px;
       margin: auto;
-    }
-
-    .underline {
-      font-size: 60px;
-      margin-top: -90px;
-      color: $color-blue;
+      text-shadow: 1px 1px $other-courses;
+      font-weight: 700;
     }
 
     .div-statistic {
+      margin-top: 30px;
       width: 67%;
 
       .card-statistic {
@@ -299,14 +397,18 @@
       }
 
       p:nth-child(1) {
-        font-size: 50px;
-        font-family: $font-family;
+        font-size: 60px;
+        font-family: utm;
+        color: $footer-bg;
+        font-family: 700;
+        text-shadow: 1px 1px $footer-bg;
       }
 
       p:nth-child(2) {
-        font-size: 40px;
+        font-size: 60px;
         font-weight: 700;
         color: $color-blue;
+        font-family: utm;
       }
     }
   }
@@ -328,7 +430,7 @@
       p {
         font-size: 20px;
         margin-left: 150px;
-        font-family: $font-family;
+        font-family: utm;
       }
     }
 
@@ -337,7 +439,12 @@
 
       p {
         font-size: 20px;
-        font-family: $font-family;
+        font-family: utm;
+        font-weight: 700;
+      }
+
+      p:hover {
+        color: $buton-hover;
       }
     }
 
@@ -347,16 +454,29 @@
       p {
         font-size: 20px;
         margin-left: 20px;
-        font-family: $font-family;
+        font-family: utm;
+        font-weight: 700;
+      }
+
+      p:hover {
+        color: $buton-hover;
       }
     }
 
     .footer-icon {
       width: 37%;
 
+      .icon-footer {
+        margin-left: 40px;
+      }
+
       img {
         margin-top: 80px;
         margin-left: 30px;
+      }
+
+      img:hover {
+        width: 70px;
       }
     }
   }
@@ -369,6 +489,11 @@
       text-align: center;
       font-size: 15px;
       padding: 5px;
+      font-family: utm;
+    }
+
+    p:hover {
+      color: $buton-hover;
     }
   }
 
@@ -377,8 +502,11 @@
     width: 20px;
     top: 88%;
     left: 92%;
-    margin-right: 100px;
     position: fixed;
+
+    a {
+      text-decoration: none;
+    }
 
     .hide {
       display: none;
@@ -397,14 +525,18 @@
       box-sizing: border-box;
       box-shadow: 1px 1px 4px 1px $shadow-hapo;
       border: 1px solid $color-button;
+      background-color: $color-button;
     }
 
     .frame-hapo {
       p {
         margin-left: 60px;
+        font-weight: 600;
+        font-family: san;
         padding: 8px;
         display: inline-block;
         font-size: 12px;
+        color: $hapo-message;
       }
 
       img {
@@ -412,9 +544,15 @@
         padding: 8px;
         margin-right: 10px;
       }
+
+      img:hover {
+        background-color: $color-blue;
+        border-radius: 100%;
+      }
     }
 
     .hello {
+      margin-top: -20px;
       img {
         margin-left: 5px;
       }
@@ -423,41 +561,58 @@
         display: inline-block;
         font-size: 12px;
         margin-left: 5px;
-        background-color: $color-button;
+        background-color: $hello-color;
         border-radius: 15px;
         width: 256px;
         height: 53px;
         padding: 10px;
+        font-weight: 600;
+        font-family: san;
+        color: $footer-bg;
       }
     }
 
     .login-mess {
-      background-color: $message;
+      background-color: $mess;
       margin: auto;
+      margin-top: 5px;
       width: 276px;
       border-radius: 10px;
       padding: 5px;
 
       img {
-        margin-left: 50px;
+        margin-left: 36px;
       }
 
       span {
         font-size: 12px;
         color: $color-button;
+        font-family: san;
+        letter-spacing: 1px;
+        font-weight: 600;
       }
     }
 
+    .login-mess:hover {
+      background-color: $message;
+    }
+
     .chat-hapo {
-      color: $shadow-hapo;
+      color: $login-mess;
       text-align: center;
       font-size: 12px;
+      font-family: san;
+      margin-top: 5px;
+    }
+
+    .chat-hapo:hover {
+      color: $footer-end;
     }
   }
 
-  .frame-login {
+  .frame-loginn {
     position: fixed;
-    margin-top: -100px;
+    margin-top: -150px;
     margin-left: 40px;
   }
 
@@ -465,7 +620,8 @@
     padding: 0px;
     margin: 0px;
     width: 430px;
-    height: 570px;
+    height: 640px;
+    position: relative;
   }
 
   .tabs {
@@ -473,9 +629,9 @@
       border-radius: 100%;
       border: none;
       padding: 0px;
-      position: fixed;
-      margin-left: 30.5%;
+      margin-left: 94%;
       margin-top: -10px;
+      position: absolute;
     }
 
     ul {
@@ -505,6 +661,11 @@
         padding: 20px;
         font-size: 25px;
         font-weight: 700;
+        font-family: utm;
+      }
+
+      p:hover {
+        background-color: $message;
       }
     }
 
@@ -517,20 +678,31 @@
         padding: 20px;
         font-size: 25px;
         font-weight: 700;
+        font-family: utm;
+      }
+
+      p:hover {
+        background-color: $message;
       }
     }
 
     .tabs-container {
       width: 90%;
 
-      .input {
-        margin-bottom: 20px;
+      span {
+        font-size: 20px;
+        font-family: utm;
+        font-style: bold;
+        color: $footer-bg;
+        font-weight: 700;
       }
 
       .check-box {
         height: 20px;
         width: 20px;
         background-color: $color-blue;
+        float: left;
+        margin-top: 5px;
       }
 
       .check-box:hover {
@@ -539,9 +711,26 @@
 
       input {
         width: 100%;
-        height: 40px;
+        height: 50px;
         background-color: $bg-input;
         border: none;
+        margin-bottom: 20px;
+      }
+
+      .user-input {
+        margin-top: -20px;
+      }
+      .login-check {
+        margin: auto;
+      }
+
+      .rememberme a {
+        text-decoration: none;
+        color: $footer-bg;
+      }
+
+      .rememberme a:hover {
+        color: $message;
       }
 
       .forgot {
@@ -549,31 +738,57 @@
         color: $color-blue;
       }
 
+      .forgot:hover {
+        color: $message;
+      }
+
       .login-hapo {
-        width: 50%;
+        width: 200px;
         background-color: $color-blue;
         border-radius: 22px;
         margin-top: 20px;
         border: $color-blue;
         font-weight: 700;
+        font-size: 18px;
+        font-family: utm;
+        padding: 8px;
+        box-shadow: 1px -2px 1px 1px $login-mess;
+      }
+
+      .login-hapo:hover {
+        background-color: $message;
       }
 
       .login-with {
         border-bottom: 1px solid $shadow-hapo;
+        font-style: bold;
+        font-size: 20px;
+        font-family: utm;
+        font-weight: 700;
+        margin: 0px;
       }
 
       .facebook {
         width: 100%;
-        background-color: $color-facebook;
+        margin-top: 20px;
+        background-color: $google-color;
         height: 55px;
         border: none;
       }
 
+      .facebook:hover {
+        background-color: $red;
+      }
+
       .google {
         width: 100%;
-        background-color: $color-google;
+        background-color: $fb-color;
         height: 55px;
         border: none;
+      }
+
+      .google:hover {
+        background-color: $blue;
       }
     }
   }
@@ -584,13 +799,13 @@
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 995px) {
   .header {
     .navbar {
       display: block;
 
       img {
-        width: 400px;
+        width: 300px;
         margin-left: auto;
       }
 
@@ -611,48 +826,55 @@
   }
 
   .banner {
+    background-size: 100% 350px;
     .info-banner {
       padding: 50px;
       margin-top: -20px;
+      margin-left: -25px;
 
       p:nth-child(1) {
         margin-top: 15px;
-        font-size: 30px;
-        font-family: $font-family;
+        font-size: 27px;
       }
 
       p:nth-child(2) {
         font-size: 30px;
-        font-weight: 700;
         margin-top: -20px;
       }
 
       img {
-        width: 35px;
+        width: 30px;
       }
 
       p:nth-child(3) {
-        font-size: 15px;
+        font-size: 16px;
         margin-top: -15px;
       }
 
       button {
-        font-size: 20px;
-        border: 0;
-        background-color: $color-blue;
-        border-radius: 35px;
+        font-size: 16px;
         width: 190px;
-        box-shadow: 2px 7px 5px $shadow-hapo;
+        padding: 2px 4px 2px 4px;
         margin-bottom: 120px;
       }
     }
   }
 
+  .bg-banner {
+    height: 50px;
+  }
+
   .tutorial-hapo {
-    margin-top: -40px;
+    margin-top: -70px;
 
     .other-courses {
-      margin-top: -50px;
+      margin-top: 50px;
+
+      .courses {
+        font-size: 50px;
+        width: 41%;
+        margin-bottom: 40px;
+      }
     }
 
     .card-hapo img {
@@ -672,67 +894,100 @@
     }
 
     .view-courses p {
-      font-size: 40px;
+      font-size: 28px;
+    }
+
+    .view-courses p:hover {
+      font-size: 35px;
+    }
+
+    .arrow {
+      width: 34px;
     }
   }
   .why-hapo {
     height: 400px;
+    background-size: 100% 395px;
+
+    .list-whyhapo span {
+      line-height: 25px;
+    }
+
     .bg-whyhapo img {
-      height: 395px;
+      height: 400px;
     }
 
     .laptop img {
-      margin-top: -60px;
-      width: 160px;
+      width: 277px;
+      margin-top: -180px;
     }
 
+    .info-why {
+      width: 60%;
+      margin-left: -60px;
+      margin-top: 230px;
+    }
+    li {
+      float: left;
+      margin-left: -100px;
+    }
+
+    .laptop-phone {
+      width: 30%;
+      margin-top: 110px;
+    }
     .laptop-phone img {
-      margin-right: 10px;
+      width: 385px;
       margin-top: 100px;
-      width: 400px;
     }
 
     p {
-      color: $color-button;
       font-size: 50px;
-      margin: 25px 0px 0px 220px;
+      display: block;
+      margin: -120px 0px 0px 270px;
+      position: absolute;
     }
 
     .list-whyhapo {
-      margin: 180px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
       color: $color-button;
-      font-size: 14px;
+      line-height: 35px;
 
       li {
         margin-top: 10px;
+      }
+
+      span {
+        font-size: 13px;
       }
     }
   }
 
   .feedback {
+    margin-top: 50px;
+
     .feedback-title {
       font-size: 50px;
       width: 220px;
     }
 
     .feedback-info {
-      font-size: 20px;
+      font-size: 18px;
       margin-top: 20px;
+      width: 100%;
     }
   }
 
   .user {
+    margin-top: 20px;
+
     img {
-      margin-left: 60px;
+      margin-left: 30px;
     }
-  }
 
-  .prev {
-    left: 95px;
-  }
-
-  .next {
-    right: 95px;
+    .user-info {
+      margin-left: 20px;
+    }
   }
 
   .become-member {
@@ -743,22 +998,20 @@
 
       p:nth-child(1) {
         font-size: 35px;
-        font-weight: 700;
-        color: $color-button;
       }
 
       button {
-        font-size: 25px;
-        width: 300px;
-        box-shadow: 2px 7px 5px $shadow-hapo;
-        color: $color-blue;
+        font-size: 20px;
+        width: 250px;
+        padding: 10px;
       }
     }
   }
 
   .statistic {
     .statis {
-      font-size: 70px;
+      font-size: 50px;
+      width: 180px;
     }
 
     .div-statistic {
@@ -766,6 +1019,14 @@
 
       .card-statistic {
         width: 33%;
+
+        p:nth-child(1) {
+          font-size: 40px;
+        }
+
+        p:nth-child(2) {
+          font-size: 40px;
+        }
       }
     }
   }
@@ -794,20 +1055,24 @@
     }
 
     .contact {
-      width: 21%;
+      width: 25%;
 
       p {
         font-size: 18px;
         margin-left: 20px;
       }
     }
-
     .footer-icon {
-      width: 34%;
+      width: 30%;
+
+      .icon-footer {
+        width: 200px;
+        margin-left: 10px;
+      }
 
       img {
         width: 40px;
-        margin: 50px 0px 0px 20px;
+        margin: 70px 0px 0px 20px;
       }
     }
   }
@@ -820,23 +1085,17 @@
   }
 
   .mess-facebook {
-    left: 90%;
+    left: 88%;
   }
 
-  .frame-login {
+  .frame-loginn {
     position: fixed;
     margin-left: 40px;
     margin-top: 1%;
   }
-
-  .tabs {
-    .button-close {
-      margin-left: 52%;
-    }
-  }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 767px) {
   .header {
     z-index: 100;
     width: 100vw;
@@ -850,7 +1109,7 @@
       width: 150px;
 
       .img-logo img {
-        width: 230px;
+        width: 220px;
       }
     }
 
@@ -860,6 +1119,7 @@
   }
 
   .banner {
+    background-size: 100% 200px;
     width: 100%;
     margin-top: 60px;
 
@@ -880,6 +1140,7 @@
   }
 
   .tutorial-hapo {
+    margin-top: -100px;
     .card-hapo {
       width: 300px;
       margin-bottom: 35px;
@@ -890,45 +1151,60 @@
     }
 
     .other-courses {
+      margin-top: 20px;
+
       .courses {
         font-size: 40px;
-        margin-top: 50px;
         margin-bottom: 30px;
-      }
-
-      .underline {
-        font-size: 50px;
+        width: 61%;
       }
     }
 
     .view-courses p {
       margin-top: 5px;
-      font-size: 25px;
+      font-size: 22px;
+
+      .arrow {
+        width: 31px;
+      }
     }
   }
 
   .why-hapo {
     height: 570px;
+    background-size: 100% 570px;
+
     .bg-whyhapo img {
       height: 570px;
     }
+    .list-whyhapo {
+      margin-top: 40px;
+      margin-left: 75px;
+      width: 150%;
+      height: 400px;
+    }
 
     .laptop img {
-      margin-top: -48px;
-      width: 130px;
+      width: 225px;
+      margin-top: -140px;
+    }
+
+    .laptop-phone {
+      width: 0%;
     }
 
     .laptop-phone img {
-      margin-right: 50px;
-      margin-top: 340px;
       width: 316px;
+      margin-left: -140px;
+      margin-top: 330px;
     }
   }
 
   .why-hapo p {
-    color: $color-button;
-    font-size: 50px;
-    margin: 28px 0px 0px 120px;
+    line-height: 40px;
+    font-size: 40px;
+    margin: -70px 0px 0px 220px;
+    width: 50%;
   }
 
   .become-member {
@@ -951,6 +1227,12 @@
   }
 
   .feedback {
+    margin-top: 50px;
+
+    .feedback-all {
+      width: 100%;
+    }
+
     .feedback-title {
       font-size: 40px;
       width: 180px;
@@ -963,14 +1245,18 @@
 
   .feelback-card {
     margin-top: 10px;
+    box-sizing: border-box;
 
     .feelback-info {
-      width: 380px;
-      padding: 10px;
+      padding: 5px;
+      height: 135px;
+      font-size: 14px;
+      width: 352px;
     }
 
     .feelback-border {
-      padding: 10px;
+      padding: 5px;
+      margin-top: 7px;
     }
 
     .user {
@@ -1002,13 +1288,13 @@
   }
 
   .prev {
-    top: 90px;
-    left: 7px;
+    top: 70px;
+    left: -9px;
   }
 
   .next {
-    top: 90px;
-    right: 7px;
+    top: 70px;
+    right: -9px;
   }
 
   .become-member {
@@ -1024,8 +1310,7 @@
       button {
         padding: 5px;
         font-size: 18px;
-        width: 180px;
-        color: $color-blue;
+        width: 200px;
       }
     }
   }
@@ -1079,9 +1364,14 @@
 
     .footer-icon {
       width: 35%;
+
+      .icon-footer {
+        width: 130px;
+      }
+
       img {
-        width: 25px;
-        margin: 40px 0px 0px 3px;
+        width: 30px;
+        margin: 25px 0px 0px 5px;
       }
     }
   }
@@ -1097,7 +1387,7 @@
     left: 80%;
   }
 
-  .frame-login {
+  .frame-loginn {
     margin-top: 50px;
     margin-left: 0px;
     width: 400px;
@@ -1107,13 +1397,6 @@
     padding: 0px;
     margin: 0px;
     width: 378px;
-    height: 600px;
-  }
-
-  .tabs {
-    .button-close {
-      margin-left: 85%;
-      margin-top: -10px;
-    }
+    height: 630px;
   }
 }
